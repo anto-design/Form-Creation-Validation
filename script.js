@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function(event){
     const emailInput = document.getElementById('email')
     const passwordInput = document.getElementById('password')
     
-usernameInput.value.trim()
- emailInput.value.trim()
-  passwordInput.value.trim()
+usernameInput.trim()
+ emailInput.trim()
+  passwordInput.trim()
 });
 
 
