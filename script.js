@@ -21,19 +21,19 @@ usernameInput.trim()
 if(usernameInput.value.length < 3) {
   isValid = false
 }else{
-  messages ='invalid user-name'
+  messages.push('invalid user-name')
 }
 
 if(emailInput.value= '@'&& '.'){
   isValid=false
 }else{
-  messages = 'invalid email'
+  messages.push('invalid email')
 }
 
 if(passwordInput.value.length < 8){
   isValid = false
 }else{
-  messages= 'invalid password'
+  messages.push('invalid password')
 }
 });
 
