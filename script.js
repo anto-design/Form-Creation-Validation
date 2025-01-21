@@ -14,6 +14,27 @@ document.addEventListener('DOMContentLoaded', function(event){
 usernameInput.trim()
  emailInput.trim()
   passwordInput.trim()
+
+  let isValid = true
+  let messages = []
+
+if(usernameInput.value.length < 3) {
+  isValid = false
+}else{
+  messages ='invalid user-name'
+}
+
+if(emailInput.value= '@'&& '.'){
+  isValid=false
+}else{
+  messages = 'invalid email'
+}
+
+if(passwordInput.value.length < 8){
+  isValid = false
+}else{
+  messages= 'invalid password'
+}
 });
 
 
