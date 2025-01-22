@@ -7,31 +7,31 @@ document.addEventListener('DOMContentLoaded', function(event){
   form.addEventListener('submit' , (event)=>{
     event.preventDefault();
 
-    const usernameInput = document.getElementById('username')
-    const emailInput = document.getElementById('email')
-    const passwordInput = document.getElementById('password')
+    const username = document.getElementById('username')
+    const email = document.getElementById('email')
+    const password = document.getElementById('password')
     
-usernameInput.trim()
- emailInput.trim()
-  passwordInput.trim()
+username.trim()
+ email.trim()
+  password.trim()
 
   let isValid = true
   let messages = []
 
-if(usernameInput.value.length < 3) {
+if(username.length < 3) {
   isValid = false
   
 }else{
   messages.push('invalid user-name')
 }
 
-if(emailInput.value=== '@'&& '.'){
+if(email.value=== '@'&& '.'){
   isValid=false
 }else{
   messages.push('invalid email')
 }
 
-if(passwordInput.value.length < 8){
+if(password.length < 8){
   isValid = false
 }else{
   messages.push('invalid password')
