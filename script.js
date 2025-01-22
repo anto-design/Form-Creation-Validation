@@ -46,7 +46,7 @@ if(isValid=== true){
 }else
 {
   feedbackDiv.innerHTML = messages.join ( <br></br>)
-  feedbackDiv.style.color = rgb(220, 63,49)
+  feedbackDiv.style.color = #dc3545
 }
 
 });
