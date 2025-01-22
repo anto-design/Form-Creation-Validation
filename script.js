@@ -20,11 +20,12 @@ usernameInput.trim()
 
 if(usernameInput.value.length < 3) {
   isValid = false
+  
 }else{
   messages.push('invalid user-name')
 }
 
-if(emailInput.value= '@'&& '.'){
+if(emailInput.value=== '@'&& '.'){
   isValid=false
 }else{
   messages.push('invalid email')
@@ -35,6 +36,19 @@ if(passwordInput.value.length < 8){
 }else{
   messages.push('invalid password')
 }
+
+
+feedbackDiv.style.display = block
+
+if(isValid=== true){
+  feedbackDiv.textContent = 'Registration successful'
+  feedbackDiv.style.color =rgb(40,167,69)
+}else
+{
+  feedbackDiv.innerHTML = messages.join ( <br></br>)
+  feedbackDiv.style.color = rgb(220, 63,49)
+}
+
 });
 
 
